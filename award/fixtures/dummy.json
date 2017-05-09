@@ -60,30 +60,35 @@
     }
   },
   {
-    "model": "award.Category",
+    "model": "award.AwardCategory",
     "pk": 1,
     "fields": {
       "title": "Bronze",
-      "description": "Bronze Medallion Award",
-      "members": ""
+      "description": "Bronze Medallion"
     }
   },
   {
-    "model": "award.Category",
+    "model": "award.AwardCategory",
     "pk": 2,
     "fields": {
-      "title": "SRC",
-      "description": "Surf Rescue Certificate",
-      "members": ""
+      "title": "ARTC",
+      "description": "Advanced Resuscitation Certificate"
     }
   },
   {
-    "model": "award.Category",
+    "model": "award.AwardCategory",
     "pk": 3,
     "fields": {
-      "title": "ARTC",
-      "description": "Advanced Resuscitation Certificate",
-      "members": ""
+      "title": "SRC",
+      "description": "Surf Rescue Certificate"
+    }
+  },
+  {
+    "model": "award.AwardCategory",
+    "pk": 4,
+    "fields": {
+      "title": "Spinal",
+      "description": "Spinal Management"
     }
   },
   {
@@ -101,7 +106,7 @@
     "fields": {
       "award_category": 1,
       "member": 2,
-      "attained": "2017-04-02"
+      "attained": "2017-03-01"
     }
   },
   {
@@ -109,8 +114,8 @@
     "pk": 3,
     "fields": {
       "award_category": 2,
-      "member": 3,
-      "attained": "2016-04-02"
+      "member": 1,
+      "attained": "2017-04-03"
     }
   },
   {
@@ -118,8 +123,17 @@
     "pk": 4,
     "fields": {
       "award_category": 3,
-      "member": 3,
-      "attained": "2015-04-02"
+      "member": 1,
+      "attained": "2015-04-03"
     }
   },
+  {
+    "model": "award.Award",
+    "pk": 5,
+    "fields": {
+      "award_category": 3,
+      "member": 2,
+      "attained": "2014-08-21"
+    }
+  }
 ]
