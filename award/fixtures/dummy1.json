@@ -63,9 +63,16 @@
     "model": "award.AwardCategory",
     "pk": 1,
     "fields": {
+      "title": "Bronze",
+      "description": "Bronze Medallion"
+    }
+  },
+  {
+    "model": "award.AwardCategory",
+    "pk": 2,
+    "fields": {
       "title": "ARTC",
-      "description": "Advanced Resuscitation Certificate",
-      "members": [1]
+      "description": "Advanced Resuscitation Certificate"
     }
   },
   {
@@ -75,6 +82,24 @@
       "award_category": 1,
       "member": 1,
       "attained": "2017-04-01"
+    }
+  },
+  {
+    "model": "award.Award",
+    "pk": 2,
+    "fields": {
+      "award_category": 1,
+      "member": 2,
+      "attained": "2017-03-01"
+    }
+  },
+  {
+    "model": "award.Award",
+    "pk": 3,
+    "fields": {
+      "award_category": 2,
+      "member": 1,
+      "attained": "2017-04-03"
     }
   }
 ]
