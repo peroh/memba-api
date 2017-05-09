@@ -14,4 +14,3 @@ class Award(models.Model):
     award_category = models.ForeignKey('award.AwardCategory')
     member = models.ForeignKey('member.Member')
     attained = models.DateField()
-    

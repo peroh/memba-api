@@ -1,0 +1,125 @@
+[
+  {
+    "model": "customuser.CustomUser",
+    "pk": 1,
+    "fields": {
+      "first_name": "Matthew",
+      "last_name": "Perrott",
+      "email": "mperrott6@gmail.com",
+      "is_active": "True",
+      "is_admin": "True"
+    }
+  },
+  {
+    "model": "customuser.CustomUser",
+    "pk": 2,
+    "fields": {
+      "first_name": "Dre",
+      "last_name": "Limbera",
+      "email": "limbera@gmail.com",
+      "is_active": "True",
+      "is_admin": "False"
+    }
+  },
+  {
+    "model": "customuser.CustomUser",
+    "pk": 3,
+    "fields": {
+      "first_name": "Rhys",
+      "last_name": "Ghevorks",
+      "email": "vorks@gmail.com",
+      "is_active": "True",
+      "is_admin": "False"
+    }
+  },
+  {
+    "model": "member.Member",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "dob": "1994-01-06",
+      "nickname": "Pez"
+    }
+  },
+  {
+    "model": "member.Member",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "dob": "1993-02-05",
+      "nickname": "Dre"
+    }
+  },
+  {
+    "model": "member.Member",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "dob": "1992-01-06",
+      "nickname": "Vorks"
+    }
+  },
+  {
+    "model": "award.Category",
+    "pk": 1,
+    "fields": {
+      "title": "Bronze",
+      "description": "Bronze Medallion Award",
+      "members": ""
+    }
+  },
+  {
+    "model": "award.Category",
+    "pk": 2,
+    "fields": {
+      "title": "SRC",
+      "description": "Surf Rescue Certificate",
+      "members": ""
+    }
+  },
+  {
+    "model": "award.Category",
+    "pk": 3,
+    "fields": {
+      "title": "ARTC",
+      "description": "Advanced Resuscitation Certificate",
+      "members": ""
+    }
+  },
+  {
+    "model": "award.Award",
+    "pk": 1,
+    "fields": {
+      "award_category": 1,
+      "member": 1,
+      "attained": "2017-04-01"
+    }
+  },
+  {
+    "model": "award.Award",
+    "pk": 2,
+    "fields": {
+      "award_category": 1,
+      "member": 2,
+      "attained": "2017-04-02"
+    }
+  },
+  {
+    "model": "award.Award",
+    "pk": 3,
+    "fields": {
+      "award_category": 2,
+      "member": 3,
+      "attained": "2016-04-02"
+    }
+  },
+  {
+    "model": "award.Award",
+    "pk": 4,
+    "fields": {
+      "award_category": 3,
+      "member": 3,
+      "attained": "2015-04-02"
+    }
+  },
+]
