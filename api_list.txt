@@ -1,0 +1,42 @@
+/* --- MEMBER --- */
+
+GET - View list of members
+http 127.0.0.1:8000/member/
+
+POST - Create new member
+http 127.0.0.1:8000/member/ user=1 dob="1994-01-06" nickname="pez"
+
+GET - View member details
+http 127.0.0.1:8000/member/1/
+
+PUT - Update member details - have to update all details
+http PUT 127.0.0.1:8000/member/1/ user=2 dob="1900-10-10" nickname="pezz"
+
+PATCH - Update member details - can update just some details
+http PATCH 127.0.0.1:8000/member/1/ user=2 
+
+DELETE - Delete a member
+http DELETE 127.0.0.1:8000/member/1/
+
+/* --- AWARD --- */
+
+GET - View list of all awards
+http 127.0.0.1:8000/award/
+
+POST - Create new award
+http 127.0.0.1:8000/award/ award_category=1 member=1 attained="2016-05-05"
+
+GET - View award details
+http 127.0.0.1:8000/award/1/
+
+PUT - Update award details - have to update all details
+http PUT 127.0.0.1:8000/award/1/ award_category=1 member=1 attained="2016-05-05"
+
+PATCH - Update award details - can update just some details
+http PATCH 127.0.0.1:8000/award/1/ award_category=1 member=1
+
+DELETE - Delete an award
+http DELETE 127.0.0.1:8000/award/1/
+
+
+
