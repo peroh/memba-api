@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'customuser',
     'member',
     'award',
+    'course',
 ]
 
 AUTH_USER_MODEL = 'customuser.CustomUser'
