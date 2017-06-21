@@ -9,11 +9,19 @@ from member.models import Member
 
 class TestMemberList(APITestCase):
     def setUp(self):
-        # Create a user
-        user1 = CustomUser.objects.create(email="abc@gmail.com", first_name="Alan", last_name="Turing")
-        user2 = CustomUser.objects.create(email="moffdaddy@gmail.com", first_name="Alastair", last_name="Moffat")
+        # Create users
+        user1 = CustomUser.objects.create(
+            email="abc@gmail.com", 
+            first_name="Alan", 
+            last_name="Turing"
+        )
+        user2 = CustomUser.objects.create(
+            email="moffdaddy@gmail.com", 
+            first_name="Alastair", 
+            last_name="Moffat"
+        )
         
-        # Create a member       
+        # Create members
         Member.objects.create(user=user1, dob="1940-05-01", nickname="Al")
         Member.objects.create(user=user2, dob="1960-06-03", nickname="The Moff")
         
