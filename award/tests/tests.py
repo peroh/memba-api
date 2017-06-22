@@ -4,7 +4,6 @@ from rest_framework.test import APITestCase
 from award.models import Award, AwardCategory
 from customuser.models import CustomUser
 from member.models import Member
-from course.models import Course
 
 class TestAwardList(APITestCase):
     def setUp(self):
@@ -57,17 +56,6 @@ class TestAwardList(APITestCase):
             award_category=category1,
             member=member2,
             attained="2017-06-03"
-        )
-        
-        # Create some courses
-        course1 = Course.objects.create(
-            award_category=category1
-        )
-        course2 = Course.objects.create(
-            award_category=category2
-        )
-        course3 = Course.objects.create(
-            award_category=category1
         )
         
         # Configure url
