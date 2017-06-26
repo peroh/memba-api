@@ -53,6 +53,12 @@ class CustomUser(AbstractBaseUser):
 
     def get_short_name(self):
         return self.email
+        
+    def get_first_name(self):
+        return self.first_name
+        
+    def get_last_name(self):
+        return self.last_name
 
     def __str__(self):
         return self.email
