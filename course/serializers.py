@@ -4,6 +4,10 @@ from course.models import Course
 
 
 class CourseSerializer(serializers.ModelSerializer):
+    
+    
     class Meta:
         model = Course
-        fields = ('award_category')
+        fields = ('title','award_category', 'attendees')
+        
+
